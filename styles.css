@@ -146,6 +146,10 @@
   cursor: pointer;
 }
 
+.div-nutri-texto button:hover {
+  background-color: rgb(194, 1, 1);
+}
+
 .div-nutri-vid {
   flex: 1;
 }
@@ -195,6 +199,10 @@
   cursor: pointer;
 }
 
+.div-sueño-texto button:hover {
+  background-color: rgb(194, 1, 1);
+}
+
 .div-sueño-vid {
   flex: 1;
 }
@@ -214,7 +222,7 @@
 
 .div-gral-plan {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -222,7 +230,8 @@
 }
 .div-plan-boton {
   flex: 1;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .div-plan-boton button {
@@ -233,6 +242,10 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.div-plan-boton button:hover {
+  background-color: rgb(194, 1, 1);
 }
 
 /*Seccion Formulario*/
@@ -296,4 +309,8 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: rgb(194, 1, 1);
 }
