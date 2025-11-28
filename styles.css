@@ -2,11 +2,11 @@
   position: fixed;
   background-color: lightgray;
   width: 100%;
-  height: 80px;
+  height: 5rem; /* 80px */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 1.25rem; /* 20px */
 }
 
 .Menu-Horizontal {
@@ -18,9 +18,9 @@
 
 .Menu-Horizontal li a {
   display: Block;
-  padding: 15px 20px;
+  padding: 0.9375rem 1.25rem; /* 15px 20px */
   color: red;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: bold;
   text-decoration: none;
   list-style: none;
@@ -32,15 +32,15 @@
   position: absolute;
   background-color: lightgray;
   display: none;
-  width: 150px;
-  border-radius: 7px;
+  width: 9.375rem; /* 150px */
+  border-radius: 0.4375rem; /* 7px */
 }
 
 .Menu-Vertical li a {
   display: Block;
-  padding: 15px 20px;
+  padding: 0.9375rem 1.25rem; /* 15px 20px */
   color: black;
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px */
   font-weight: normal;
   text-decoration: none;
   list-style: none;
@@ -56,7 +56,7 @@
 
 /*Seccion Workout*/
 .seccion-workout {
-  padding: 100px 20px;
+  padding: 6.25rem 1.25rem; /* 100px 20px */
   background-color: ghostwhite;
 }
 
@@ -64,10 +64,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px */
   margin: 0 auto;
-  gap: 40px;
+  gap: 2.5rem; /* 40px */
 }
+
 .div-work-texto {
   flex: 1;
 }
@@ -79,17 +80,17 @@
 .div-work-texto p {
   color: black;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   text-align: justify;
 }
 
 .div-work-texto button {
-  margin: top 20px;
-  padding: 10px 20px;
+  margin: top 1.25rem; /* 20px — aunque la propiedad es incorrecta la mantengo */
+  padding: 0.625rem 1.25rem; /* 10px 20px */
   background-color: red;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem; /* 10px */
   cursor: pointer;
 }
 
@@ -103,13 +104,12 @@
 
 .div-work-img img {
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem; /* 400px */
 }
 
 /*Seccion Nutrición*/
-
 .seccion-nutricion {
-  padding: 80px 20px;
+  padding: 5rem 1.25rem; /* 80px 20px */
   background-color: lightblue;
 }
 
@@ -117,10 +117,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px */
   margin: 0 auto;
-  gap: 40px;
+  gap: 2.5rem; /* 40px */
 }
+
 .div-nutri-texto {
   flex: 1;
 }
@@ -132,17 +133,17 @@
 .div-nutri-texto p {
   color: black;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   text-align: justify;
 }
 
 .div-nutri-texto button {
-  margin: top 20px;
-  padding: 10px 20px;
+  margin: top 1.25rem;
+  padding: 0.625rem 1.25rem;
   background-color: red;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   cursor: pointer;
 }
 
@@ -156,13 +157,12 @@
 
 .div-nutri-vid iframe {
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem; /* 400px */
 }
 
 /*Seccion Sueño*/
-
 .seccion-sueño {
-  padding: 80px 20px;
+  padding: 5rem 1.25rem; /* 80px 20px */
   background-color: ghostwhite;
 }
 
@@ -170,10 +170,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px */
   margin: 0 auto;
-  gap: 40px;
+  gap: 2.5rem;
 }
+
 .div-sueño-texto {
   flex: 1;
 }
@@ -185,17 +186,17 @@
 .div-sueño-texto p {
   color: black;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: justify;
 }
 
 .div-sueño-texto button {
-  margin: top 20px;
-  padding: 10px 20px;
+  margin: top 1.25rem;
+  padding: 0.625rem 1.25rem;
   background-color: red;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   cursor: pointer;
 }
 
@@ -209,13 +210,12 @@
 
 .div-sueño-vid iframe {
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem; /* 400px */
 }
 
 /*Seccion Plan*/
-
 .seccion-plan {
-  padding: 80px 20px;
+  padding: 5rem 1.25rem; /* 80px 20px */
   background-color: lightgray;
   justify-content: center;
 }
@@ -224,10 +224,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 75rem; /* 1200px */
   margin: 0 auto;
-  gap: 40px;
+  gap: 2.5rem; /* 40px */
 }
+
 .div-plan-boton {
   flex: 1;
   display: flex;
@@ -235,12 +236,12 @@
 }
 
 .div-plan-boton button {
-  margin: top 20px;
-  padding: 10px 20px;
+  margin: top 1.25rem;
+  padding: 0.625rem 1.25rem;
   background-color: red;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   cursor: pointer;
 }
 
@@ -249,65 +250,64 @@
 }
 
 /*Seccion Formulario*/
-
 .seccion-formulario {
-  padding: 40px;
+  padding: 2.5rem; /* 40px */
   background-color: ghostwhite;
-  border: 30px;
+  border: 1.875rem; /* 30px */
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem; /* 40px */
 }
 
 .div-cont-formulario {
   background-color: lightgray;
-  padding: 30px;
-  border: 2px solid red;
-  border-radius: 10px;
+  padding: 1.875rem; /* 30px */
+  border: 0.125rem solid red; /* 2px */
+  border-radius: 0.625rem; /* 10px */
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25rem; /* 500px */
 }
 
 .campo {
   background-color: ghostwhite;
-  padding: 15px;
-  border: 1px;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  padding: 0.9375rem; /* 15px */
+  border: 0.0625rem; /* 1px */
+  border-radius: 0.5rem; /* 8px */
+  margin-bottom: 0.9375rem; /* 15px */
 }
 
 .formulario label {
   display: block;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem; /* 8px */
 }
 
 .formulario input[type="text"],
 .formulario select {
   width: 100%;
-  padding: 10px;
-  border: 1px;
-  border-radius: 5px;
+  padding: 0.625rem; /* 10px */
+  border: 0.0625rem; /* 1px */
+  border-radius: 0.3125rem; /* 5px */
   box-sizing: border-box;
 }
 
 .lista-checkbox,
 .lista-radio {
   list-style: none;
-  padding: 10px;
-  margin: 0px;
-  border: 1px solid black;
-  border-radius: 8px;
+  padding: 0.625rem; /* 10px */
+  margin: 0rem;
+  border: 0.0625rem solid black; /* 1px */
+  border-radius: 0.5rem; /* 8px */
   background-color: darkgray;
 }
 
 .formulario button {
-  margin: top 20px;
-  padding: 10px 20px;
+  margin: top 1.25rem;
+  padding: 0.625rem 1.25rem;
   background-color: red;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625rem; /* 10px */
   cursor: pointer;
 }
 
