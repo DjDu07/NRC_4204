@@ -1,284 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="Pie.css" />
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <h1>FitTrinity</h1>
-    <nav class="topheader">
-      <a href="" class="logo">
-        <img width="80" height="70" src="img/Logo_FitTrinity.png" alt="" />
-      </a>
-      <ul class="Menu-Horizontal">
-        <li>
-          <a href="">Workout</a>
-          <ul class="Menu-Vertical">
-            <li><a href="">Ejercicios propuestos</a></li>
-            <li><a href="">Recomendaciones</a></li>
-            <li><a href="">Arma tu rutina</a></li>
-            <li><a href="">Objetivos</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="">Nutrición</a>
-          <ul class="Menu-Vertical">
-            <li><a href="">Recetas propuestas</a></li>
-            <li><a href="">Crea tu receta</a></li>
-            <li><a href="">Crea tu plan alimentario</a></li>
-            <li><a href="">Objetivos</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="">Sueño</a>
-          <ul class="Menu-Vertical">
-            <li><a href="">Historial de sueño</a></li>
-            <li><a href="">Técnicas de sueño</a></li>
-            <li><a href="">Resumen de sueño del día</a></li>
-            <li><a href="">Objetivos</a></li>
-          </ul>
-        </li>
-        <li><a href="#plan">Planes</a></li>
-      </ul>
-    </nav>
-    <!--SECCION WORKOUT-->
-    <section class="seccion-workout">
-      <div class="div-gral-workout">
-        <div class="div-work-texto">
-          <h2>Seccion Workout</h2>
-          <p>
-            "Workout" significa entrenamiento o sesión de ejercicio, y se
-            refiere a la actividad física que se realiza para mejorar la
-            condición física. Aunque es un término inglés, se usa comúnmente en
-            español para referirse a rutinas de ejercicio, desde sesiones de
-            entrenamiento que combinan calistenia, aeróbicos y fitness, hasta
-            actividades más específicas como el "street workout" (entrenamiento
-            de calle) que utiliza el peso corporal y el entorno.
-          </p>
-          <button>Mas info...</button>
-        </div>
-        <div class="div-work-img">
-          <img src="img/workout.jpg" />
-        </div>
-      </div>
-    </section>
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Acceso Restringido</h2>
 
-    <!--SECCION NUTRICIÓN-->
-    <section class="seccion-nutricion">
-      <div class="div-gral-nutri">
-        <div class="div-nutri-texto">
-          <h2>Seccion Nutrición</h2>
-          <p>
-            La nutrición es fundamental para la salud, ya que proporciona la
-            energía y los nutrientes necesarios para el funcionamiento,
-            crecimiento y mantenimiento del cuerpo. Una dieta saludable previene
-            enfermedades como la obesidad y la diabetes, fortalece el sistema
-            inmunológico, y mejora el rendimiento físico y mental. Además,
-            influye en el bienestar emocional y la calidad de vida en general.
-          </p>
-          <button>Mas info...</button>
-        </div>
-        <div class="div-nutri-vid">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/vj3jPvixnuU?si=mzbPdKs2V71hSgML"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!--SECCION SUEÑO-->
-    <section class="seccion-sueño">
-      <div class="div-gral-sueño">
-        <div class="div-sueño-texto">
-          <h2>Seccion Sueño</h2>
-          <p>
-            El sueño es fundamental para la salud física y mental, ya que
-            permite al cuerpo y al cerebro recuperarse, reparar tejidos,
-            consolidar la memoria, regular hormonas y fortalecer el sistema
-            inmunológico. Dormir lo suficiente mejora el estado de ánimo, la
-            concentración, la toma de decisiones y el rendimiento diario,
-            mientras que la falta de sueño aumenta el riesgo de problemas de
-            salud crónicos como diabetes, enfermedades del corazón y obesidad.
-          </p>
-          <button>Mas info...</button>
-        </div>
-        <div class="div-work-img">
-          <img src="img/sueño.jpg" />
-        </div>
-      </div>
-    </section>
-
-    <!--SECCION PLAN-->
-    <section class="seccion-plan">
-      <div class="div-gral-plan">
-        <div class="div-plan-boton">
-          <button>Crea tu propio plan</button>
-        </div>
-      </div>
-    </section>
-
-    <!--SECCION PLAN-->
-    <section class="seccion-formulario" id="plan">
-      <div class="div-cont-formulario">
-        <h2>Crea tu propio plan</h2>
-        <p>Complete todos los campos...</p>
-        <form class="formulario">
-          <!--INPUT:TEXT-->
-          <div class="campo">
-            <label for="nombre">Nombres completos:</label>
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
             <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingrese el nombre"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu email"
+              required
             />
           </div>
 
-          <!--LISTA DESPLEGABLE-->
-          <div class="campo">
-            <label for="nombres">País</label>
-            <select id="pais" name="pais">
-              <option value="">Seleccione un país</option>
-              <option value="peru">Peru</option>
-              <option value="argentina">Argentina</option>
-              <option value="chile">Chile</option>
-              <option value="colombia">Colombia</option>
-            </select>
+          <div class="input-group">
+            <label for="password">Clave de Acceso (ok)</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce la clave secreta"
+              required
+            />
           </div>
 
-          <!--CHECKBOX-->
-          <div class="campo">
-            <label>¿Cuáles son tus metas?</label>
-            <ul class="lista-checkbox">
-              <li>
-                <label
-                  ><input type="checkbox" name="metas" value="a" />Tonificar mi
-                  cuerpo</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="metas" value="b" />Cuidar mi
-                  salud</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="metas" value="c" />Peder
-                  peso</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="metas" value="d" />Ganar
-                  fuerza</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="checkbox" name="metas" value="e" />Ganar masa
-                  muscular</label
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!--RADIO-->
-          <div class="campo">
-            <label>Selecciona tu sexo:</label>
-            <ul class="lista-radio">
-              <li>
-                <label
-                  ><input type="radio" name="sexo" value="m" />Masculino</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="radio" name="sexo" value="f" />Femenino</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="radio" name="sexo" value="nb" />No
-                  binario</label
-                >
-              </li>
-              <li>
-                <label
-                  ><input type="radio" name="sexo" value="na" />Prefiero no
-                  decir</label
-                >
-              </li>
-            </ul>
-          </div>
-          <button class="formulrio" type="submit">Enviar</button>
+          <button type="submit" class="login-button">Iniciar Sesión</button>
         </form>
       </div>
     </section>
 
-    <!-- PIE DE PAGINA -->
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
-          <div class="footer-brand">
-            <img src="img/Logo_FitTrinity.png" alt="Logo" class="footer-logo" />
-            <p>FitTrinity</p>
-            <small>© 2025 Todos los derechos reservados</small>
-          </div>
-
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legal</h4>
-            <a href="/Documentos/3.politica-privacidad.pdf"
-              >Política de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="#">Términos y Condiciones</a>
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
-          </div>
-
-          <!-- Redes sociales con íconos personalizados -->
-          <div class="footer-social">
-            <h4>Síguenos</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
-        </div>
-      </footer>
-    </section>
+    <script src="login.js"></script>
   </body>
 </html>
