@@ -5,7 +5,7 @@
   background: none; /* Sin fondo */
   border: none; /* Sin bordes */
   cursor: pointer; /* Manito al pasar el mouse */
-  margin-right: 1rem; /* Espacio entre el borde derecho */
+  margin-right: 3rem; /* Espacio entre el borde derecho */
 }
 
 /* RESPONSIVE: MÓVILES */
